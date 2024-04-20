@@ -28,7 +28,7 @@ const PostDetails = () => {
 
     const openPost = (_id) => navigate(`/posts/${_id}`);
 
-    const recommendedPosts = posts.filter(({ _id}) => _id !== post._id);
+    const recommendedPosts = posts.filter(({ _id}) => _id !== id);
     
     if (!post) return null;
 
